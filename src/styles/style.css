@@ -1,4 +1,10 @@
 /* base  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 h2 {
 	font-size: 2.25rem; /* 36px */
 	line-height: 3rem; /* 40px */
@@ -43,6 +49,14 @@ p {
 	padding-top: 5rem;
 }
 
+.red-color {
+	color: #ff0000;
+}
+
+.green-color {
+	color: #64cf82;
+}
+
 /* komponen */
 .wrapper-titlenparagraf {
 	text-align: center;
@@ -79,6 +93,83 @@ p {
 
 .section-info-paragraf {
 	line-height: 1.725rem;
+}
+
+/* ini bagian data covid */
+.wrapper-covid--data {
+	padding: 2rem 2rem 1.5rem;
+	box-shadow: 0px 0px 57px -7px rgba(119, 119, 119, 0.12);
+	border-radius: 0.8rem;
+	-webkit-border-radius: 0.8rem;
+	-moz-border-radius: 0.8rem;
+	-ms-border-radius: 0.8rem;
+	-o-border-radius: 0.8rem;
+}
+
+.wrapper-search {
+	justify-content: center;
+	margin-bottom: 3rem;
+}
+
+#search {
+	width: 20rem;
+	padding: 0.5rem 1rem;
+	border: 1px solid #454f6b;
+	outline-offset: 0;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+#btn-search {
+	margin-left: 1rem;
+	color: #fff;
+	padding: 0.5rem 0.8rem;
+	background-color: #4b7f81;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+.wrapper-list-data {
+	flex-wrap: wrap;
+	gap: 3rem;
+}
+
+.covid-data {
+	flex: 1;
+	flex-basis: 21%;
+	text-align: center;
+}
+
+.covid-data--title {
+	opacity: 0.8;
+}
+
+.covid-data--total {
+	margin: 0.8rem 0;
+	font-weight: 600;
+}
+
+.covid-data--conclusion {
+	opacity: 0.8;
+	font-size: 0.9rem;
+}
+
+.wrapper-country {
+	justify-content: center;
+	align-items: center;
+	margin-top: 2.5rem;
+}
+
+.country-img {
+	margin-right: 0.5rem;
+	height: 1rem;
+	border: 0.5px solid #000;
 }
 
 /* ini bagian section pencegahan */
@@ -160,5 +251,13 @@ p {
 @media only screen and (max-width: 640px) {
 	.card-pencegahan {
 		flex-basis: 100%;
+	}
+
+	#search {
+		width: 80%;
+	}
+
+	.wrapper-list-data {
+		gap: 2rem;
 	}
 }
