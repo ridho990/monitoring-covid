@@ -32,4 +32,16 @@
 	.virus-blur-mobile {
 		@apply absolute -z-[1] blur-[2px];
 	}
+
+	.card-gejala-awal {
+		@apply flex flex-1 p-3 rounded-lg shadow-custom sm:p-4 sm:basis-[45%] lg:basis-[31%];
+	}
+
+	.card-gejala-awal__img {
+		@apply mr-4 w-[20%] sm:w-[25%];
+	}
+
+	.card-gejala-awal__content {
+		@apply flex flex-col w-[78%] sm:w-[73%] justify-center;
+	}
 }

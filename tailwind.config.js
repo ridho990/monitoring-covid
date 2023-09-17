@@ -32,6 +32,9 @@ module.exports = {
 				"bounce-7s": "bounce 7s linear infinite",
 				"bounce-9s": "bounce 9s linear infinite",
 			},
+			boxShadow: {
+				custom: "0px 0px 44px -5px rgba(102, 102, 102, 0.10)",
+			},
 		},
 	},
 	plugins: [],

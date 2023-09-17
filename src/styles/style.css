@@ -30,12 +30,12 @@ p {
 }
 
 /* utility */
-.flex-row {
+.flex-row-cst {
 	display: flex;
 	flex-direction: row;
 }
 
-.flex-col {
+.flex-col-cst {
 	display: flex;
 	flex-direction: column;
 }
@@ -97,7 +97,7 @@ p {
 
 /* ini bagian data covid */
 .wrapper-covid--data {
-	padding: 2rem 2rem 1.5rem;
+	padding: 2rem 2rem 1.8rem;
 	box-shadow: 0px 0px 57px -7px rgba(119, 119, 119, 0.12);
 	border-radius: 0.8rem;
 	-webkit-border-radius: 0.8rem;
