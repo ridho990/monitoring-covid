@@ -1,6 +1,7 @@
+/* base  */
 h2 {
 	font-size: 2.25rem; /* 36px */
-	line-height: 2.5rem; /* 40px */
+	line-height: 3rem; /* 40px */
 	font-weight: 700;
 }
 
@@ -14,8 +15,150 @@ h4 {
 
 h5 {
 	font-size: 1.125rem;
+	line-height: 2rem;
+	font-weight: 700;
 }
 
 p {
 	font-weight: 500;
+}
+
+/* utility */
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.padding-x {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+.padding-top-section {
+	padding-top: 5rem;
+}
+
+/* komponen */
+.wrapper-titlenparagraf {
+	text-align: center;
+	margin-bottom: 3rem;
+}
+
+.title-section {
+	margin-bottom: 0.5rem;
+}
+
+/* ini adalah bagian section info */
+.section-info {
+	justify-content: space-between;
+}
+
+.section-info--content {
+	width: 45%;
+	justify-content: center;
+}
+
+.section-info-img__mobile {
+	width: 45%;
+	display: none;
+}
+
+.section-info-img {
+	align-items: center;
+	width: 45%;
+}
+
+.section-info-title {
+	margin-bottom: 1rem;
+}
+
+.section-info-paragraf {
+	line-height: 1.725rem;
+}
+
+/* ini bagian section pencegahan */
+.wrapper-card--pencegahan {
+	gap: 2rem;
+}
+
+.card-pencegahan {
+	flex: 1;
+	padding: 2rem 1.2rem;
+	text-align: center;
+	box-shadow: 0px 0px 44px -5px rgba(102, 102, 102, 0.1);
+	border-radius: 0.7rem;
+	-webkit-border-radius: 0.7rem;
+	-moz-border-radius: 0.7rem;
+	-ms-border-radius: 0.7rem;
+	-o-border-radius: 0.7rem;
+}
+
+.card-pencegahan--img img {
+	height: 14rem;
+	margin: 0 auto;
+}
+
+.card-pencegahan--title {
+	margin: 1.2rem 0 0.6rem;
+}
+
+@media only screen and (max-width: 1025px) {
+	h2 {
+		font-size: 1.602rem;
+	}
+
+	h3 {
+		font-size: 1.424rem;
+	}
+
+	h4 {
+		font-size: 1.266rem;
+	}
+
+	h5 {
+		font-size: 1.125rem;
+	}
+
+	.section-info--content {
+		width: 50%;
+	}
+
+	.wrapper-card--pencegahan {
+		flex-wrap: wrap;
+	}
+
+	.card-pencegahan {
+		flex-basis: 40%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.section-info {
+		padding-top: 3rem;
+	}
+
+	.section-info--content {
+		width: 100%;
+	}
+
+	.section-info-img__mobile {
+		display: block;
+		margin-bottom: 1.2rem;
+		width: 100%;
+	}
+
+	.section-info-img {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	.card-pencegahan {
+		flex-basis: 100%;
+	}
 }
