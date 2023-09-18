@@ -4,8 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Webpack Component Test</title>
-		<link rel="stylesheet" href="./styles/output.css" />
-		<link rel="stylesheet" href="./styles/style.css" />
+		<!-- <link rel="stylesheet" type="text/css" href="styles/output.css" />
+		<link rel="stylesheet" type="text/css" href="styles/style.css" /> -->
 
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -114,7 +114,9 @@
 			/>
 		</header>
 
-		<section class="section-info padding-x flex-row-cst padding-top-section">
+		<section-info></section-info>
+
+		<!-- <section class="section-info padding-x flex-row-cst padding-top-section">
 			<div class="section-info-img flex-row-cst">
 				<img src="./images/covid-dunia.svg" alt="covid-dunia" />
 			</div>
@@ -131,7 +133,7 @@
 					pandemi yang terjadi di banyak negara di seluruh dunia.
 				</p>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="section-covid--data padding-x padding-top-section">
 			<div class="wrapper-covid--data">
@@ -141,7 +143,8 @@
 						Lihat data terbaru tentang jumlah kasus Covid-19 di dunia!
 					</p>
 				</div>
-				<div class="wrapper-search flex-row-cst">
+				<search-bar></search-bar>
+				<!-- <div class="wrapper-search flex-row-cst">
 					<input
 						type="search"
 						name="search"
@@ -151,8 +154,9 @@
 					<button type="submit" id="btn-search">
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</button>
-				</div>
-				<div class="wrapper-list-data flex-row-cst">
+				</div> -->
+				<wrapper-data></wrapper-data>
+				<!-- <div class="wrapper-list-data flex-row-cst">
 					<div class="covid-data">
 						<p class="covid-data--title">Total Kasus</p>
 						<h4 class="covid-data--total">492.677</h4>
@@ -193,15 +197,17 @@
 						<h4 class="covid-data--total red-color">492.677</h4>
 						<p class="covid-data--conclusion">20% Dari Total Kasus</p>
 					</div>
-				</div>
-				<div class="wrapper-country flex-row-cst">
+				</div> -->
+				<country-element></country-element>
+				<!-- <div class="wrapper-country flex-row-cst">
 					<img src="./images/id.png" alt="" class="country-img" />
 					<p class="country-name">Indonesia</p>
-				</div>
+				</div> -->
 			</div>
 		</section>
 
-		<section class="section-pencegahan padding-x padding-top-section">
+		<section-pencegahan></section-pencegahan>
+		<!-- <section class="section-pencegahan padding-x padding-top-section">
 			<div class="wrapper-titlenparagraf">
 				<h2 class="title-section">Pencegahan Covid-19</h2>
 				<p class="paragraf-section">
@@ -246,7 +252,7 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 		<section class="padding-x padding-top-section">
 			<div class="wrapper-titlenparagraf">
@@ -335,11 +341,15 @@
 
 		<footer class="padding-x mt-12 py-6 bg-navy text-center sm:mt-20 sm:py-8">
 			<h5 class="text-white">Website Monitoring Covid-19</h5>
-			<p class="text-white opacity-80">
-				<a href="#" class="hover:opacity-100">Kebijakan Privasi</a> dan
-				<a href="#" class="hover:opacity-100">Syarat Ketentuan</a>
-			</p>
+			<span class="text-white opacity-80">
+				<a href="#">Kebijakan Privasi</a> dan
+				<a href="#">Syarat Ketentuan</a>
+			</span>
 		</footer>
-		<script src="./app.js" type="module"></script>
+		<!-- <script src="./app.js" type="module"></script> -->
 	</body>
 </html>
+
+<!-- jadi untuk menghilangkan mime eror, dapat diatasi dengan menghilangkan import style di
+app.js pada saat production dan menghilangkan script dan link style pada saat
+build pada file html; -->

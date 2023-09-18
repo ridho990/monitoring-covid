@@ -13,6 +13,12 @@ module.exports = merge(common, {
 						loader: "babel-loader",
 						options: {
 							presets: ["@babel/preset-env"],
+							plugins: [
+								[
+									"@babel/plugin-syntax-import-attributes",
+									{ deprecatedAssertSyntax: true }, // Aktifkan opsi deprecatedAssertSyntax
+								],
+							],
 						},
 					},
 				],

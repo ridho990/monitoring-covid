@@ -68,7 +68,7 @@ p {
 }
 
 /* ini adalah bagian section info */
-.section-info {
+/* .section-info {
 	justify-content: space-between;
 }
 
@@ -93,7 +93,7 @@ p {
 
 .section-info-paragraf {
 	line-height: 1.725rem;
-}
+} */
 
 /* ini bagian data covid */
 .wrapper-covid--data {
@@ -173,7 +173,7 @@ p {
 }
 
 /* ini bagian section pencegahan */
-.wrapper-card--pencegahan {
+/* .wrapper-card--pencegahan {
 	gap: 2rem;
 }
 
@@ -196,7 +196,7 @@ p {
 
 .card-pencegahan--title {
 	margin: 1.2rem 0 0.6rem;
-}
+} */
 
 @media only screen and (max-width: 1025px) {
 	h2 {
@@ -215,20 +215,20 @@ p {
 		font-size: 1.125rem;
 	}
 
-	.section-info--content {
+	/* .section-info--content {
 		width: 50%;
-	}
+	} */
 
-	.wrapper-card--pencegahan {
+	/* .wrapper-card--pencegahan {
 		flex-wrap: wrap;
 	}
 
 	.card-pencegahan {
 		flex-basis: 40%;
-	}
+	} */
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
 	.section-info {
 		padding-top: 3rem;
 	}
@@ -246,12 +246,12 @@ p {
 	.section-info-img {
 		display: none;
 	}
-}
+} */
 
 @media only screen and (max-width: 640px) {
-	.card-pencegahan {
+	/* .card-pencegahan {
 		flex-basis: 100%;
-	}
+	} */
 
 	#search {
 		width: 80%;
