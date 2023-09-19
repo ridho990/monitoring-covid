@@ -5,7 +5,6 @@ class dataCovid {
 				return response.json();
 			})
 			.then((responseJson) => {
-				console.log(responseJson);
 				if (responseJson.country) {
 					return Promise.resolve(responseJson);
 				} else {

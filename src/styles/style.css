@@ -172,6 +172,11 @@ p {
 	border: 0.5px solid #000;
 }
 
+.error-message {
+	text-align: center;
+	opacity: 0.8;
+}
+
 /* ini bagian section pencegahan */
 /* .wrapper-card--pencegahan {
 	gap: 2rem;

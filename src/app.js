@@ -8,6 +8,3 @@ import "./javascript/component/section-pencegahan.js";
 import main from "./javascript/view/main.js";
 
 document.addEventListener("DOMContentLoaded", main);
-document.addEventListener("DOMContentLoaded", function () {
-	console.log("Test DOm COntent");
-});
