@@ -39,9 +39,8 @@ module.exports = merge(common, {
 					ecma: undefined,
 					parse: {},
 					compress: {},
-					mangle: true, // Note `mangle.properties` is `false` by default.
+					mangle: true,
 					module: false,
-					// Deprecated
 					output: null,
 					format: null,
 					toplevel: false,
