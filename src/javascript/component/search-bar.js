@@ -9,7 +9,10 @@ class searchBar extends HTMLElement {
 	}
 
 	get value() {
-		const inputValue = this.querySelector("#search").value.replace(/\s+/g, "-");
+		const inputValue = this.querySelector("#search")
+			.value.trim()
+			.replace(/\s+/g, "-");
+		console.log(inputValue);
 		return inputValue.toLowerCase();
 	}
 
@@ -20,7 +23,7 @@ class searchBar extends HTMLElement {
 						type="search"
 						name="search"
 						id="search"
-						placeholder="Nama negara (En)"
+						placeholder="Nama negara or id (En)"
 					/>
 					<button type="submit" id="btn-search">
 						<i class="fa-solid fa-magnifying-glass"></i>

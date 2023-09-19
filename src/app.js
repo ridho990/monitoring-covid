@@ -1,5 +1,5 @@
-import "./styles/output.css";
-import "./styles/style.css";
+// import "./styles/output.css";
+// import "./styles/style.css";
 import "./javascript/component/section-info.js";
 import "./javascript/component/search-bar.js";
 import "./javascript/component/wrapper-data.js";
