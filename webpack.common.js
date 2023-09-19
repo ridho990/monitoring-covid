@@ -20,6 +20,18 @@ module.exports = {
 					},
 				],
 			},
+			{
+				test: /\.html$/i,
+				loader: "html-loader",
+			},
+			{
+				test: /\.(png|svg)$/i,
+				type: "asset/resource",
+			},
+			{
+				test: /\.(svg)$/i,
+				type: "asset",
+			},
 		],
 	},
 	plugins: [
