@@ -83,16 +83,6 @@ class sectionInfo extends HTMLElement {
 				line-height: 1.725rem;
 			}
 
-			@media only screen and (max-width: 1025px) {
-				h2 {
-					font-size: 1.602rem;
-				}
-
-				.section-info--content {
-					width: 50%;
-				}
-			}
-
 			@media only screen and (max-width: 767px) {
 				.section-info {
 					padding-top: 3rem;
@@ -110,6 +100,37 @@ class sectionInfo extends HTMLElement {
 
 				.section-info-img {
 					display: none;
+				}
+			}
+
+			@media only screen and (min-width: 1025px) {
+				h2 {
+					font-size: 1.602rem;
+				}
+
+				.section-info--content {
+					width: 50%;
+				}
+			}
+
+			@media only screen and (min-width: 1440px) {
+				.padding-x {
+					padding-right: 12.673%;
+					padding-left: 12.673%;
+				}
+			}
+
+			@media only screen and (min-width: 1920px) {
+				.padding-x {
+					padding-right: 22%;
+					padding-left: 22%;
+				}
+			}
+
+			@media only screen and (min-width: 2560px) {
+				.padding-x {
+					padding-right: 29%;
+					padding-left: 29%;
 				}
 			}
 		</style>

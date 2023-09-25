@@ -112,6 +112,27 @@ class sectionPencegahan extends HTMLElement {
                     flex-basis: 100%;
                 }
 			}
+
+			@media only screen and (min-width: 1440px) {
+				.padding-x {
+					padding-right: 12.673%;
+					padding-left: 12.673%;
+				}
+			}
+
+			@media only screen and (min-width: 1920px) {
+				.padding-x {
+					padding-right: 22%;
+					padding-left: 22%;
+				}
+			}
+
+			@media only screen and (min-width: 2560px) {
+				.padding-x {
+					padding-right: 29%;
+					padding-left: 29%;
+				}
+			}
 		</style>
 
         <section class="section-pencegahan padding-x padding-top-section">
