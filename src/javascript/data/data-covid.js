@@ -1,6 +1,6 @@
 class dataCovid {
 	static searchDataCovid(keyword) {
-		return fetch(`https://corona.lmao.ninja/v2/countries/${keyword}`)
+		return fetch(`https://disease.sh/v2/countries/${keyword}`)
 			.then((response) => {
 				return response.json();
 			})

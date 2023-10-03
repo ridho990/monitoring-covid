@@ -16,7 +16,7 @@ class countryElement extends HTMLElement {
 
 		this.innerHTML = `
             <div class="wrapper-country flex-row-cst">
-					<img src="https://corona.lmao.ninja/assets/img/flags/${this._country[1].toLowerCase()}.png" alt="" class="country-img" />
+					<img src="https://disease.sh/assets/img/flags/${this._country[1].toLowerCase()}.png" alt="" class="country-img" />
 					<p class="country-name">${this._country[0]} | ${formattedDate}</p>
 			</div>
         `;
